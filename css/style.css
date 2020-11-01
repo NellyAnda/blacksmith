@@ -129,13 +129,46 @@ ul li {
 
 @media screen and (min-width: 414px) and (max-width: 768px) {
 
-  .main_container {
+  .main_container,
+  .sunset_container {
     height: 270px;
   }
 } 
 
-/*@media screen and (min-width: 768px) and (max-width: 992px) {}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .iron_main_container {
+    flex-direction: row;
+  }
+
+  .iron_left_container,
+  .iron_right_container {
+    width: 50%;
+  }
   
+  .iron_left_picture {
+    z-index: 5;
+    position: relative;
+    margin-left: 90px;
+  }
+
+  .iron_right_picture {
+    position: relative;
+    margin-right: 150px;
+  }
+
+  .iron_left_container > p,
+  .iron_right_container > p {
+    height: 150px;
+    margin: 5%;
+  }
+
+}
+  
+
+
+/*
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {} 
   
 @media screen and (min-width: 1200px) {}*/
